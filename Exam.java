@@ -25,6 +25,8 @@ public class Exam {
 		System.out.println(exam.max(num, 0));
 		//問五
 		System.out.println(exam.sum(num, 0));
+		//問六
+		System.out.println(exam.average(num, 3, 4));
 	}
 
 	/*
@@ -88,6 +90,7 @@ public class Exam {
 	*/
 
 	double average (int x,int y,int z) {
+		double dDummy = (x + y + z) /3;
 		return dDummy;
 	}
 
