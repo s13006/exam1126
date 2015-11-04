@@ -133,6 +133,7 @@ public class Exam {
 	*/
 
 	double getTriangleArea (int x,int y,int z) {
+		double dDummy = (x + y + z) / 2;
 		return dDummy;
 	}
 
