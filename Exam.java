@@ -23,6 +23,8 @@ public class Exam {
 		System.out.println(exam.positive(num));
 		//問四
 		System.out.println(exam.max(num, 0));
+		//問五
+		System.out.println(exam.sum(num, 0));
 	}
 
 	/*
@@ -76,6 +78,7 @@ public class Exam {
 	*/
 
 	int sum(int x,int y) {
+		int iDummy = x + y;
 		return iDummy;
 	}
 
