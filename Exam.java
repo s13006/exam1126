@@ -27,6 +27,8 @@ public class Exam {
 		System.out.println(exam.sum(num, 0));
 		//問六
 		System.out.println(exam.average(num, 3, 4));
+		//問七
+		System.out.println(exam.rank(num));
 	}
 
 	/*
@@ -100,6 +102,16 @@ public class Exam {
 	*/
 
 	char rank (int score) {
+		char cDummy = 'D';
+		if (score >= 90) {
+			cDummy = 'A';
+		} else if (score >= 70) {
+			cDummy = 'B';
+		} else if (score >= 45) {
+			cDummy = 'C';
+		} else {
+			cDummy = 'D';
+		}
 		return cDummy;
 	}
 
