@@ -21,6 +21,8 @@ public class Exam {
 		exam.countDown(num);
 		//問三
 		System.out.println(exam.positive(num));
+		//問四
+		System.out.println(exam.max(num, 0));
 	}
 
 	/*
@@ -64,6 +66,7 @@ public class Exam {
 	*/
 
 	int max(int x,int y) {
+		int iDummy = (x > y) ? x : y;
 		return iDummy;
 	}
 
