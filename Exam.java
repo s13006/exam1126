@@ -33,8 +33,9 @@ public class Exam {
 		System.out.println(exam.rank(num));
 		//問八
 		System.out.println(exam.getRectArea(num,num));
-		*/
 		exam.TimesTable();
+		*/
+		exam.execute();
 	}
 
 	/*
@@ -219,7 +220,20 @@ public class Exam {
 	*/
 
 	void execute() {
-
+		//ソート
+		int[] hoge = {7,6,8,4,5,2,3,1,9};
+		for (int i = 0; i < hoge.length - 1; i++) {
+			for (int j = hoge.length - 1; j > i; j--) {
+				if(hoge[j] < hoge[j-1]){
+						int tmp = hoge[j];
+						hoge[j] = hoge[j-1];
+						hoge[j-1] = tmp;
+				}
+			}
+		}
+		for (int a : hoge) {
+			System.out.print(a + " ");
+		}
 	}
 
 }
