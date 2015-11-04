@@ -10,6 +10,17 @@ public class Exam {
 	String sDummy = "";
 	int [] iaDummy = new int [0];
 
+	public static void main(String[] args) {
+		Exam exam = new Exam();
+		Scanner stdIn = new Scanner(System.in);
+
+		int count = stdIn.nextInt();
+		//問一
+		exam.countUp(count);
+		//問ニ
+		exam.countDown(count);
+	}
+
 	/*
 	問1 引数 count を受け取り,0からcountまで1づつ増加して表示する
 	メソッド countUp を定義せよ。但しwhileを用いること。
@@ -18,8 +29,9 @@ public class Exam {
 	void countUp(int count) {
  		int i = 0;
 		while (i < count + 1) {
-			System.out.println(i++);
+			System.out.print(i++ + " ");
 		}
+		System.out.println();
 	}
 
 	/*
@@ -29,8 +41,9 @@ public class Exam {
 
 	void countDown(int count) {
 		for (int i = count + 1; i > 0; i--) {
-			System.out.println(count - 1);
+			System.out.print(i - 1 + " ");
 		}
+		System.out.println();
 	}
 
 	/*
