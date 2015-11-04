@@ -29,6 +29,8 @@ public class Exam {
 		System.out.println(exam.average(num, 3, 4));
 		//問七
 		System.out.println(exam.rank(num));
+		//問八
+		System.out.println(exam.getRectArea(num,num));
 	}
 
 	/*
@@ -121,6 +123,7 @@ public class Exam {
 	*/
 
 	int getRectArea (int width, int height) {
+		int iDummy = width * height;
 		return iDummy;
 	}
 
