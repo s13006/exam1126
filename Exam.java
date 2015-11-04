@@ -14,11 +14,13 @@ public class Exam {
 		Exam exam = new Exam();
 		Scanner stdIn = new Scanner(System.in);
 
-		int count = stdIn.nextInt();
+		int num = stdIn.nextInt();
 		//問一
-		exam.countUp(count);
+		exam.countUp(num);
 		//問ニ
-		exam.countDown(count);
+		exam.countDown(num);
+		//問三
+		System.out.println(exam.positive(num));
 	}
 
 	/*
@@ -52,6 +54,7 @@ public class Exam {
 	*/
 
 	boolean positive(int x) {
+		boolean bDummy = x >= 0;
 		return bDummy;
 	}
 
