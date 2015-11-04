@@ -154,6 +154,8 @@ public class Exam {
 	*/
 
 	int getRandom (int min,int max) {
+		Random rand = new Random();
+		int iDummy = min +  rand.nextInt(max - min);
 		return iDummy;
 	}
 
