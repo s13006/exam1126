@@ -144,6 +144,7 @@ public class Exam {
 	*/
 
 	double calcBMI (int x,int y,int z) {
+		double dDummy = x / y * z;
 		return dDummy;
 	}
 
