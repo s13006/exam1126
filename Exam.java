@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 
 public class Exam {
 
@@ -165,6 +166,8 @@ public class Exam {
 	*/
 
 	int[] descSort(int[] array) {
+		int[] iaDummy = array;
+		Arrays.sort(iaDummy);
 		return iaDummy;
 	}
 
