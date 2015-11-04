@@ -15,6 +15,7 @@ public class Exam {
 		Exam exam = new Exam();
 		Scanner stdIn = new Scanner(System.in);
 
+		/*
 		int num = stdIn.nextInt();
 		//問一
 		exam.countUp(num);
@@ -32,6 +33,8 @@ public class Exam {
 		System.out.println(exam.rank(num));
 		//問八
 		System.out.println(exam.getRectArea(num,num));
+		*/
+		exam.TimesTable();
 	}
 
 	/*
@@ -201,6 +204,13 @@ public class Exam {
 
 	void TimesTable(){
 		int[][] timestable = new int[9][9];
+		for (int i = 0; i < timestable.length; i++) {
+			for (int j = 0; j < timestable[i].length; j++) {
+				timestable[i][j] = (i+1) * (j+1);
+				System.out.print(timestable[i][j] + " ");
+			}
+			System.out.println();
+		}
 	}
 
 	/*
