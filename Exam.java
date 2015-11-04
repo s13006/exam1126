@@ -181,6 +181,16 @@ public class Exam {
 	*/
 
 	String FizzBuzz(int x) {
+		String sDummy;
+		if (x % 15 == 0) {
+			sDummy = "FizzBuzz";
+		} else if (x % 5 == 0) {
+			sDummy = "Buzz";
+		} else if (x % 3 == 0) {
+			sDummy = "Fizz";
+		} else {
+			sDummy = String.valueOf(x);
+		}
 		return sDummy;
 	}
 
